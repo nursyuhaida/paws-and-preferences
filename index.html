@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paws & Preferences 🐾</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Paws & Preferences 🐱</h1>
+  <div class="header-border"></div>
 
-  <div id="card-container"></div>
-
-  <div id="summary" class="hidden">
-    <h2>You liked <span id="like-count"></span> cats ❤️</h2>
-    <div id="liked-cats"></div>
+  <!-- Overlay -->
+  <div id="overlay" class="overlay">
+    <div class="overlay-content">
+      <h2 id="overlay-title">Welcome 🐾</h2>
+      <p id="overlay-text">Find out which cats you love by swiping!</p>
+      <button id="overlay-btn">Next</button>
+    </div>
   </div>
+
+  <!-- Main App -->
+  <main class="app">
+    <h1>Paws & Preferences 🐱</h1>
+    <div id="card-container"></div>
+  </main>
+
+  <!-- Summary -->
+  <section id="summary" class="summary hidden">
+    <div class="summary-content">
+      <h2>You liked <span id="like-count"></span> cats ❤️</h2>
+      <div id="liked-cats" class="liked-cats"></div>
+      <button id="restart-btn">Start Again</button>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
