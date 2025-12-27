@@ -134,9 +134,7 @@ h1 {
 
 #restart-btn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 12px 20px;
+  padding: 20px 20px;
   border: none;
   border-radius: 999px;
   background: white;

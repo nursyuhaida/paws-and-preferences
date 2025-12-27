@@ -11,7 +11,7 @@ const likedCatsDiv = document.getElementById("liked-cats");
 const restartBtn = document.getElementById("restart-btn");
 
 // Variables
-const TOTAL_CATS = 10;
+const TOTAL_CATS = 15;
 let currentIndex = 0;
 let likedCats = [];
 let cards = [];
@@ -21,7 +21,7 @@ let overlayStep = 0;
 overlayBtn.addEventListener("click", () => {
   overlayStep++;
   if (overlayStep === 1) {
-    overlayTitle.textContent = "How it works 👆";
+    overlayTitle.textContent = "How it works?";
     overlayText.innerHTML = `
       👉 Swipe <strong>right</strong> to Like ❤️ <br>
       👈 Swipe <strong>left</strong> to Dislike ❌
